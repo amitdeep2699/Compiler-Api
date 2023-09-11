@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Compiler</title>
+    <style>
+        #line {
+            height: 100%;
+            width: 100%;
+            resize: none;
+            border: none;
+            outline: none;
+        }
+
+        #input {
+            height: 100%;
+            width: 100%;
+            resize: none;
+            border: none;
+            outline: none;
+        }
+        #div1{
+            text-align: right;
+            width: 8%;
+            background-color: rgb(122, 115, 115);
+        }
+        #div2{
+            width: 92%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="row mb-2 mt-2">
+                <div class="col-10" style="font-size: 1.2rem;">Type Your Code</div>
+                <div class="col-2" style="text-align:right;">
+                    <select id="lang" onchange="selectlang()">
+                        <option value="0">Python</option>
+                        <option value="4">JavaScript</option>
+                        <option value="7">C</option>
+                        <option value="77">C++</option>
+                        <option value="8">Java</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row" style="height: 55vh;">
+                <div class="div1">
+                    <textarea id="line" disabled style="overflow:hidden;text-align:center;">1</textarea>
+                </div>
+                <div class="div2"><textarea id="input" placeholder="#Write Your Code here" onscroll="on()"></textarea></div>
+            </div>
+            <div class="row mt-2 pl-1" style="height: 28vh;background-color: black;color: white;" id="opt">Output :</div>
+            <div class="row">
+                <button type="button" class="btn btn-warning mt-2" onclick="Compile()">Compile</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
